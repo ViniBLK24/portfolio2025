@@ -1,51 +1,48 @@
-main{
+/* MAIN ----------------------------------------------------- */
+main {
     padding: 5%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
 }
 
-/* MAIN CONTENT---------------------------------------------- */
-
-main .main-content{
+/* MAIN CONTENT --------------------------------------------- */
+main .main-content {
     display: flex;
     flex-direction: column;
 }
 
-main .main-content h2{
+main .main-content h2 {
     margin-bottom: 2%;
     font-size: 2.2em;
-
 }
 
-main .main-content .text{
+main .main-content .text {
     margin-bottom: 10%;
 }
 
-main .main-content .text p{
+main .main-content .text p {
     width: 75%;
     font-size: 1.2em;
     font-weight: 300;
     line-height: 1.6;
 }
 
-
-/* CARDS--------------------------------------------------------- */
-main .techs .cards-container{
+/* CARDS ---------------------------------------------------- */
+main .techs .cards-container {
     display: flex;
     align-items: center;
 }
 
-main .techs .cards-container .card{
+main .techs .cards-container .card {
     width: 150px;
     height: 150px;
     padding: 10px;
     background-color: #eee;
     border-radius: 8px;
-    margin-right: 0.9em;
-    margin-left: 0.9em;
+    margin: 0 0.9em; /* Combinação de margin-right e margin-left */
     cursor: pointer;
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,81 +51,66 @@ main .techs .cards-container .card{
 
 main .techs .cards-container .card img {
     width: 80%;
-
 }
 
 main .techs .cards-container .card:hover {
     box-shadow: 0px 0px 20px #ff0066;
     width: 170px;
     height: 170px;
+    transform: scale(1.0);
     transition: all 0.8s ease-in-out;
-    transform: scale(1.0); 
-
 }
 
-
-
-/* PRofile-------------------------------------- */
-main figure{
+/* PROFILE -------------------------------------------------- */
+main figure {
     display: flex;
     flex-direction: column;
 }
 
-main figure img{
+main figure img {
     width: 300px;
     height: 400px;
     border-radius: 500px;
-
     margin-bottom: 100%;
-    border: 1px #ff0066 solid;
-    transition: 0.2 ease-in-out;
+    border: 1px solid #ff0066;
+    transition: 0.2s ease-in-out;
 }
 
-
-main figure img:hover{
+main figure img:hover {
     box-shadow: 0px 0px 6px #ff0066;
 }
 
-/* main figcaption{
-    margin-left: 28%;
-    margin-bottom: 00%;
-} */
-/* Projetos--------------------------------------- */
-
-main .projetos h2{
-margin-top: 8%;
+/* PROJECTS ------------------------------------------------- */
+main .projetos h2 {
+    margin-top: 8%;
 }
 
-
-main .projetos .projects-container{
+main .projetos .projects-container {
     display: flex;
     align-items: center;
     padding-bottom: 7%;
 }
 
-main .projetos .projects-container img{
-    width: 430px;
-    height: 280px;
+main .projetos .projects-container img {
+    width: 310px;
+    height: 210px;
     padding: 10px;
     background-color: #eee;
     border-radius: 10px;
     margin-right: 1.8em;
     cursor: pointer;
-    
     display: flex;
     align-items: center;
     justify-content: center;
     transition: box-shadow 0.25s ease-in-out;
 }
 
-main .projetos .projects-container img:hover{
-    box-shadow: 0px 0px 10px #ff0066;  
-} 
+main .projetos .projects-container img:hover {
+    box-shadow: 0px 0px 10px #ff0066;
+}
 
-
-
-
-.btn{
+/* BUTTONS -------------------------------------------------- */
+.btn {
     border: 2px solid #ff0066;
     padding: 10px 25px;
     border-radius: 70px;
@@ -136,22 +118,30 @@ main .projetos .projects-container img:hover{
     text-transform: uppercase;
     font-weight: 600;
     font-size: 18px;
-    transition: .5s;  
-   
+    transition: 0.5s;
 }
 
-main a{
+main a {
     color: #eee;
     font-weight: 750;
     align-items: center;
-    text-align:justify;
+    text-align: justify;
 }
 
-.curriculo-btn :hover{
-    background-color:transparent;
+.curriculo-btn:hover {
+    background-color: transparent;
     border-color: #eee;
 }
 
-main .curriculo h2{
+main .curriculo h2 {
     margin-bottom: 25px;
+}
+
+#starry-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca o fundo atrás do conteúdo */
 }
